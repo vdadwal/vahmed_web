@@ -19,4 +19,4 @@
 .byebug_history
 
 # Don't track secret file
-/config/sectret.yml
+/config/secrets.yml
