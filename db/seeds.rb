@@ -5,3 +5,29 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+10.times do |blog|
+  Blog.create!(
+    title: "My post #{blog}",
+    body: "Testing"
+  )
+end
+
+5.times do |skill|
+  Skill.create!(
+    title: "Rails #{skill}",
+    percent_utilized: 15
+  )
+end
+
+puts "5 skills created"
+
+9.times do |portfolio_item|
+  Portfolio.create!(
+    title: "Test IMS #{portfolio_item}",
+    subtitle: "BOOM",
+    body: "Big body",
+    main_image: "http://placehold.it/550x300",
+    thumb_image: "http://placehold.it/350x200"
+  )
+end
+puts "9 portfolio items created"
